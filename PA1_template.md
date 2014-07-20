@@ -60,12 +60,18 @@ maximum_interval <- df_mean_interval_sorted[1, 1]
 
 ![Plot 1 ](figures/plot2.png)
 
- 5-minute interval,  containing the maximum number of steps
-
-835
+ 5-minute interval,  containing the maximum number of steps : 835
 
 ## Imputing missing values
 
+```r
+len_df <- length(df$date)
+len_df_complete <- length(df_complete$date)
+na_count <- len_df - len_df_complete
+```
+
+
+ Total number of missing values : 835
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
